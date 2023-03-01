@@ -1,0 +1,9 @@
+name:网易云音乐
+desc: 1.解锁vip音乐试听 2.去广告
+http:
+  mitm:
+    - "*.music.163.com"
+  script:
+    - ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ 
+  script-providers:
+    - https://raw.githubusercontent.com/WeiRen0/Scripts/main/wyun.js
